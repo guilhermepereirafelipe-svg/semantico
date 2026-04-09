@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semântico</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="grupo">
+        <header class="cabecalho">
+            <h1>Site Semântico</h1>
+            <nav class="menu">
+                <a href="#">Início</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+            </nav>
+        </header>
+        <div class="conteudo">
+            <nav class="navegacao">
+                <h2>Menu Lateral</h2>
+                <ul>
+                    <li>Perfil</li>
+                    <li>Configurações</li>
+                    <li>Ajuda</li>
+                </ul>
+            </nav>
+            <section class="secao">
+                <h3>Painel Principal</h3>
+                <p>Nome: <span id="nomeUsuario">Gui pereira</span></p>
+                <p>Curso: <span id="nomeCurso">Desenvolvendo Web Front-End</span></p>
+                <p>Status: <sapn id="status">Ativo</sapn></p>
+                <hr>
+                <h3>Alterar Nome</h3>
+                <div class="formulario">
+                    <input type="text" name="inputNome" id="inputNome">
+                    <button onclick="alterarNome()">Alterar</button
+                </div>
+                <div class="formulario">
+                    <h3>Alterar Curso</h3>
+                        <input type="text" name="inputCurso" id="inputCurso">
+                        <button onclick="alterarCurso()">Alterar</button>
+                </div>
+                <div class="formulario">
+                    <h3>Alterar Status</h3>
+                    <input type="text" name="inputStatus" id="inputStatus">
+                    <button onclick="alterarStatus()">Alterar</button>
+                </div>
+                <h3 class="titulocor">alterar cores do site</h3>
+                <div class="linha-cor">
+                    <p>header</p>
+                    <input type="color" name="corHeader" id="corHeader">
+                    <button onclick="mudarCorHeader()">aplicar</button>
+                </div>
+                
+                   <div class="linha-cor">
+                    <p>navegação</p>
+                    <input type="color" name="cornavegação" id="cornavegação">
+                    <button onclick="mudarCornavegação()">aplicar</button>
+                </div>
+
+                   <div class="linha-cor">
+                    <p>seção</p>
+                    <input type="color" name="corseção" id="corseção">
+                    <button onclick="mudarCorseção()">aplicar</button>
+                </div>
+
+                   <div class="linha-cor">
+                    <p>roda pé</p>
+                    <input type="color" name="corrodapé" id="corrodapé">
+                    <button onclick="mudarCorrodapé()">aplicar</button>
+                </div>
+
+            </section>
+        </div>
+        <footer class="rodape">
+            <p>&copy; Desenvolvido por <strong>gui pereira</strong></p>
+            <div class="redes">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram">Instagram</a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733553.png" alt="Github">Github</a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
